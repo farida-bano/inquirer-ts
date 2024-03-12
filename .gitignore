@@ -1,0 +1,25 @@
+ager mac book ya  pc main yeh error hy tu ap yeh changes krain.
+ReferenceError: (require is not defined in ES module scope, you can use import instead
+This file is being treated as an ES module because it has a'.js' file extension and'/Users//chalk/package.json' 
+contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+yeh kesa error hy)
+
+""problem sloving""
+Ye error JavaScript mein common hota hai, especially jab aap ES module syntax use kar rahe hote hain. 
+Ye error aapko batata hai ke aapne require ko ES module scope mein use kiya hai, jabki require CommonJS 
+module syntax ka part hota hai.
+
+Is error ka matlab hai ke aapko import keyword ka istemal karna chahiye agar aap ES module syntax use kar 
+rahe hain. Aur agar aap CommonJS syntax use karna chahte hain toh aapko file ko .cjs extension se rename 
+karna hoga ya fir package.json mein "type": "commonjs" specify karna hoga.
+
+Yeh error aksar Node.js mein modules ke sath aata hai jab aap ES module syntax (import) use karte hain, 
+lekin Node.js ab CommonJS syntax (require) ko bhi support karta hai. Is error ko fix karne ke liye, aapko
+require ki jagah import ka istemal karna hoga ya fir file ko CommonJS format mein convert karna hoga.
+
+
+
+
+
+
+
